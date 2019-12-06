@@ -15,7 +15,6 @@ exports.store = (req,res) => {
         console.log('added new data');
     }).catch((error) => {
         console.log(error)
-        console.log(error)
     });
 
     res.redirect('/contact')
