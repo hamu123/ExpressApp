@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'ExpressApp' });
 });
 
+router.get('/contact',ContactController.index);
+
 router.get('/post', PostController.index);
 router.get('/post/:slug', PostController.show);
 
