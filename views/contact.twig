@@ -1,0 +1,32 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <form action="/contact-save" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" name="name" id="name">
+            <small></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+          <div class="form-group">
+              <label for="name">Phone</label>
+              <input class="form-control" name="phone" id="name">
+              <small></small>
+          </div>
+
+          <div class="form-group">
+              <label for="name">Message</label>
+              <input class="form-control" name="message" id="name">
+              <small></small>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
