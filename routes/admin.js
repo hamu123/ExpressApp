@@ -6,5 +6,7 @@ const RegisterController = require('../app/Controller/Admin/Auth/RegisterControl
 
 router.get('/', LoginController.index);
 
+router.get('/register', RegisterController.register);
+
 
 module.exports = router;
