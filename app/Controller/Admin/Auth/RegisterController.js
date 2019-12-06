@@ -20,6 +20,8 @@ exports.register = (req,res) => {
         }).catch(error => {
             console.log(error);
         })
+    }else {
+
     }
 
     res.send('success');
